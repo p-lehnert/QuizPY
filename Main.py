@@ -15,5 +15,15 @@ if mode == '1':
     print()
 elif mode == '2':
     print()
+elif mode == 'q':
+    print()
 else:
     print()
+
+def quiz():
+    cursor.execute("SELECT * FROM questions")
+    questions = cursor.fetchall()
+
+    i = 0
+    while i < 10:
+        print()
